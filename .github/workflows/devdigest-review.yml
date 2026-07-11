@@ -23,7 +23,7 @@ jobs:
           DEVDIGEST_POST_AS: pr_comment
       - name: Upload DevDigest result
         if: always()
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: devdigest-result
           path: devdigest-result.json
